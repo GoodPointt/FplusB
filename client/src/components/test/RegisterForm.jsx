@@ -3,8 +3,6 @@ import { REGISTER_VALIDATION } from '../../common/yup';
 import axios from 'axios';
 import { Button } from '@chakra-ui/react';
 
-// console.log(import.meta.env.VITE_BASE_API_URL);
-
 axios.defaults.baseURL = import.meta.env.VITE_BASE_API_URL;
 
 export const RegisterForm = () => {
@@ -15,8 +13,6 @@ export const RegisterForm = () => {
   };
 
   const handleSubmit = async (values, { resetForm }) => {
-    console.log('111');
-    console.log(values);
     if (!values.name) {
       console.log('Please enter a username.');
       return;
