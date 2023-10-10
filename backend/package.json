@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "fplusb": "file:.."
+  }
+}
